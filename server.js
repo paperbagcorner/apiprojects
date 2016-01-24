@@ -7,7 +7,7 @@ var app = express();
 
 //Logging middleware
 app.use(function(req, res, next) {
-   console.log(Date.now(), req.url);
+   console.log(new Date().toISOString(), req.url);
    next();
 });
 
