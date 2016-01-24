@@ -9,7 +9,7 @@
     "javascript",
   ],
   "scripts": {
-  "start": "node timestamp.js"
+  "start": "node server.js"
   },
   "author": "Mattias Andersson",
   "license": "MIT",
