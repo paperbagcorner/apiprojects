@@ -30,9 +30,16 @@ module.exports = function (app) {
 				let theDate = new Date(timestamp);
 				result = {
 					unix: Math.floor(timestamp / 1000),
-					natural: theDate.toDateString()
+					natural: formatDate(theDate)
 				}
 			}
 			res.json(result);
 		});
 };
+
+// From a given date object, return a string of the form Jan 23, 2013.
+function formatDate(aDate) {
+	let splitDate = aDate.toDateString().split(' ');
+	splitDate[2] = splitDate[2] + ',';
+	return splitDate.slice(1).join(' ');
+}
