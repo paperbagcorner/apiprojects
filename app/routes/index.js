@@ -15,13 +15,10 @@ module.exports = function (app) {
 			let timestamp;
 			let result = {unix: null, natural: null};
 
-			// If the time string contains non-numeric characters, attempt to parse it as as time string.
-			if (timeStr.match(/\D/)) {
+			// Try to parse the string as a unix timestamp first. If that doesn't work, try to parse it as a time string.
+			timestamp = Number(timeStr) * 1000;
+			if (isNaN(timestamp))
 				timestamp = Date.parse(timeStr);
-			} else {
-				// Question: Do we need to round to the start of the day?
-				timestamp = Number(timeStr * 1000);
-			}
 
 			if (!isNaN(timestamp)) {
 				let theDate = new Date(timestamp);
