@@ -15,7 +15,7 @@ module.exports = function (app) {
 			let timeStr = req.params.time;
 			console.log(timeStr);
 			let timestamp;
-			let result = {};
+			let result = {unix: null, natural: null};
 			
 			console.log("Time string:", timeStr);
 			// If the time string contains non-numeric characters, attempt to parse it as as time string.
