@@ -23,4 +23,4 @@ https://apiprojects-paperbagcorner.c9users.io/1450137600
 {"unix":1450137600,"natural":"Dec 15, 2015"}
 ```
 
-Based on [clementine.js]("http://www.clementinejs.com) boilerplate.
+Based on [clementine.js](http://www.clementinejs.com) boilerplate.
