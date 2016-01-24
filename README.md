@@ -13,8 +13,8 @@ This is an implementation of the [Timestemp backend development project](http://
 ## Example usage
 
 ```
-https://apiprojects-paperbagcorner.c9users.io/December%2015,%202015
-https://apiprojects-paperbagcorner.c9users.io/1450137600
+https://timestamp-paperbagcorner.herokuapp.com/December%2015,%202015
+https://timestamp-paperbagcorner.herokuapp.com/1450137600
 ```
 
 ## Example output
