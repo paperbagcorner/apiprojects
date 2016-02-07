@@ -1,4 +1,4 @@
-# Backend development project: Timestamp microserver
+# Backend development project: Timestamp microservice
 
 ## Overview
 
